@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>This Month in AI – </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --clon-purple: #5B2D8B;
+  --clon-purple-dark: #442165;
+  --clon-teal: #2BB0E6;
+  --clon-purple-light: #EDE7F6;
+  --clon-teal-light: #E6F6FC;
+  --bg: #F8FAFC;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(
+    135deg,
+    var(--clon-purple),
+    var(--clon-teal)
+  );
+  color: #ffffff;
+  padding: 40px 32px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.header img {
+  height: 48px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0 0 0;
+  opacity: 0.92;
+  letter-spacing: 0.3px;
+  font-style: italic;
+}
+
+/* MAIN GRID */
+.main {
+  display: block;
+}
+
+/* LEFT CONTENT */
+.left {
+  padding: 22px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--clon-purple);
+}
+
+.ai-content p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* DID YOU KNOW */
+.did-you-know {
+  margin-top: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    var(--clon-purple),
+    var(--clon-purple-dark)
+  );
+  color: #ffffff;
+}
+
+.did-you-know h3 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.did-you-know p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* CARDS GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+/* DID YOU KNOW FULL WIDTH */
+.did-you-know-full {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    var(--clon-purple),
+    var(--clon-purple-dark)
+  );
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(91, 45, 139, 0.2);
+}
+
+.did-you-know-full h3 {
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.did-you-know-full p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: var(--carelon-teal-light);
+  padding: 20px;
+}
+
+/* BUZZ WORDS */
+.buzz {
+  background: #ffffff;
+  border-left: 4px solid var(--clon-purple);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.buzz strong {
+  color: var(--clon-purple);
+}
+
+.buzz ul {
+  padding-left: 18px;
+  margin: 10px 0 0;
+}
+
+.buzz li {
+  font-size: 13px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+/* BUZZ WORDS TABLE */
+.buzz-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.buzz-table tr:first-child td {
+  font-weight: 700;
+  color: var(--clon-purple);
+  padding: 8px 0;
+  border-bottom: 2px solid var(--clon-purple-light);
+}
+
+.buzz-table td {
+  padding: 10px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.buzz-table td:first-child {
+  font-weight: 600;
+  color: var(--clon-purple);
+  width: 45%;
+}
+
+.buzz-table td:last-child {
+  color: var(--text-muted);
+  padding-left: 10px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* LEARNING */
+.learning {
+  background: var(--clon-teal);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.learning strong {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.learning small {
+  opacity: 0.9;
+  font-size: 10px;
+}
+
+/* KNOW TEAM */
+.team {
+  background: var(--clon-purple-light);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.team strong {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+  color: var(--clon-purple);
+}
+
+.team p {
+  font-size: 11px;
+  color: var(--clon-purple-dark);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+.footer {
+  background: #0F172A;
+  color: #CBD5F5;
+  padding: 14px;
+  text-align: center;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <!-- Replace src with your local Carelon logo if needed -->
+    <img src="cgs_sm_h_rgb_c.png" alt="Logo">
+    <div class="header-content">
+      <h1>AI Unlocked Monthly Trends & Tools</h1>
+      <p class="header-subtitle">Stay updated with our latest news and insights</p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <div class="section-title">This Month in AI</div>
+
+      <div class="ai-content">
+        <p>
+          Ralph Wegman, an AI at Navy CMU lab, turned into a coding phenomenon.
+          What started as a 5-line bash script in an Australian goat farm is now
+          an official AI coding character.
+        </p>
+
+        <p>
+          Instead of training from scratch, Ralph uses a clever “Stop Hook”
+          that intercepts Claude when it thinks it’s done, validates the work,
+          and forces retries if tests fail.
+        </p>
+
+        <p>
+          Results are wild — a $500,000 contract completed for ~$397 in API costs.
+        </p>
+
+        <p>
+          Early wins include solving month-long scientific problems in hours.
+          Models now exceed 90% on PhD-level benchmarks.
+        </p>
+
+        <p>
+          The goal is not replacing experts — but creating collaborators
+          that accelerate discovery.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="did-you-know">
+          <h3>Did you know?</h3>
+          <p>
+            Humans often over-trust AI systems, which is why simple
+            mistakes can go unnoticed in production workflows.
+          </p>
+        </div>
+
+        <div class="learning">
+          <strong>Learning</strong><br>
+          <small>Paper reading session – 45 mins</small>
+        </div>
+
+        <div class="team">
+          <strong>Know your team</strong>
+          <p>
+            clon Analytics teams deliver AI-driven insights across
+            healthcare, payment integrity, and clinical outcomes.
+          </p>
+        </div>
+      </div>
+
+      <div class="buzz">
+        <strong>Buzz Words</strong>
+        <table class="buzz-table">
+          <tr>
+            <td>Term</td>
+            <td>Definition</td>
+          </tr>
+          <tr>
+            <td>MCP</td>
+            <td>Model Context Protocol – Framework for managing AI model inputs and outputs</td>
+          </tr>
+          <tr>
+            <td>Vibe Coding</td>
+            <td>Intuitive development guided by patterns and feel rather than strict rules</td>
+          </tr>
+          <tr>
+            <td>TPO</td>
+            <td>Test-Driven Process Optimization – Testing-first AI development approach</td>
+          </tr>
+          <tr>
+            <td>PRM</td>
+            <td>Process Reward Models – AI systems that evaluate reasoning processes</td>
+          </tr>
+          <tr>
+            <td>Inference Scaling</td>
+            <td>Using more compute during model inference to improve accuracy</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © clon | Internal AI Newsletter
+  </div>
+
+</div>
+
+</body>
+</html>
