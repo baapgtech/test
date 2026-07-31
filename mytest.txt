@@ -1,14 +1,31 @@
-Bhai, ye rahe AI newsletter ya technical discussions ke liye super-fresh, cutting-edge AI **buzzwords** unki 1-line crisp definitions ke saath:
-## 1. Test-Time Compute (Inference Scaling)
-Optimization paradigm where additional compute is spent during the inference phase, allowing models to "think longer" and solve complex reasoning problems without increasing model size.
-## 2. Representation Engineering (RepE)
+## BUZZ WORDS
+
+### 1. Representation Engineering (RepE)
 Top-down control technique that monitors and manipulates high-level internal cognitive states of AI models to regulate safety, truthfulness, and tone without retraining.
-## 3. World Models
-AI architectures that build internal, physics-aware 3D simulations of the physical world, enabling autonomous agents to predict spatial outcomes and plan complex actions.
-## 4. Sparse Autoencoders (SAEs)
-Advanced interpretability tool used to untangle millions of overlapping concepts inside neural networks into individual, human-understandable features.
-## 5. Model Merging (Weight Averaging)
+
+### 2. Model Merging (Weight Averaging)
 Technique for combining multiple specialized LLMs into a single powerful model by mathematically blending their parameters without additional training overhead.
-## 6. Embodied AI
-Interdisciplinary field fusing AI models with physical hardware (like robotics or spatial computing) to interact dynamically with real-world environments.
-Ye saare words solid technical context rakhte hain aur newsletter ke readers ko ekdum insider vibe denge!
+
+### 3. Sparse Autoencoders (SAEs)
+Interpretability architecture used to untangle millions of overlapping concepts inside neural networks into individual, human-understandable features.
+
+### 4. Direct Preference Optimization (DPO)
+A streamlined alternative to RLHF that directly optimizes model parameters using pair-wise human preferences, skipping the need to train a separate reward model.
+
+### 5. Process-Supervised Reward Models (PRMs)
+An alignment paradigm that evaluates and scores every intermediate step of a reasoning path—rather than just the final answer—drastically reducing logical hallucination in complex multi-step tasks.
+
+### 6. Dynamic Context Compression
+A technique that dynamically compresses long prompt histories into compact state vectors on the fly, allowing LLMs to process million-token contexts with minimal latency and lower memory usage.
+
+### 7. Compound AI Systems
+An architectural approach that builds AI applications by orchestrating multiple specialized models, tools, and external datastores together, rather than relying on a single monolithic LLM.
+
+### 8. Continuous Pre-training (Domain Adaptation)
+The practice of continuously feeding specialized streaming data to an already trained base model, allowing it to stay updated with new facts without forgetting prior general knowledge.
+
+### 9. Mixture-of-Depths (MoD)
+A neural architecture that dynamically allocates different amounts of computation (depth) per token, skipping layers for easy words and diving deep only on complex concepts.
+
+### 10. Semantic Routing
+An edge infrastructure technique that uses ultra-lightweight classifiers to dynamically route incoming queries to the most cost-effective model—reserving expensive reasoning tokens only for complex logic.
