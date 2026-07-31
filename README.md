@@ -1,11 +1,16 @@
-## AI Is Watching Earth From Space
-AI analyzes satellite images to detect illegal mining, monitor deforestation, predict floods, estimate crop yields, and even identify wildfire risks before they spread.
+## 🚀 AI Buzz Words (July 2026)
 
-## Humans + AI Beat Either Alone
-Studies consistently show that the highest-quality decisions often come from human experts working with AI, rather than AI alone or humans alone.
+### 🌍 World Models
+AI systems that build an internal simulation of the world to predict outcomes, plan actions, and reason before taking action. They are emerging as the foundation for autonomous robots and next-generation AI agents.
 
-## The Next Industrial Revolution Is "Agentic AI"
-Instead of one chatbot, companies are building AI employees that can plan tasks, use tools, write code, access databases, send emails, and collaborate with other AI agents with minimal human intervention.
+### ⚡ Inference-Time Compute (ITC)
+Instead of using the same amount of compute for every prompt, modern AI dynamically allocates additional reasoning power only to complex tasks—improving both accuracy and efficiency.
 
-## AI Is Becoming Energy-Aware
-The next generation of AI models is being optimized not only for accuracy but also for energy consumption. Two models with similar accuracy may differ by 10× in electricity usage.
+### 🛣️ PathMoE (Path-Constrained Mixture of Experts)
+An advanced Mixture of Experts architecture that learns efficient "expert paths" across multiple layers, reducing computational cost while improving model performance.
+
+### 🔄 Latent Cache Merging
+An emerging multi-agent AI concept where agents merge their internal Key-Value (KV) caches instead of exchanging only text, enabling faster collaboration and reducing redundant computation.
+
+### 📡 Generative Communications (GenCom)
+A next-generation AI-powered communication approach where receivers reconstruct missing information using AI, reducing the amount of data transmitted and improving network efficiency for future 6G systems.
