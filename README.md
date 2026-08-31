@@ -1,16 +1,16 @@
-## 🚀 AI Buzz Words (July 2026)
+## 🚀 AI Buzz Words — August 2026
 
-### 🌍 World Models
-AI systems that build an internal simulation of the world to predict outcomes, plan actions, and reason before taking action. They are emerging as the foundation for autonomous robots and next-generation AI agents.
+### 🌐 WebMCP
+An emerging approach that allows websites to **expose tools and capabilities directly to AI agents**, making it easier for agents to interact with web applications and perform tasks.
 
-### ⚡ Inference-Time Compute (ITC)
-Instead of using the same amount of compute for every prompt, modern AI dynamically allocates additional reasoning power only to complex tasks—improving both accuracy and efficiency.
+### 🛡️ Agent Containment
+A security approach that places AI agents within **controlled environments with restricted permissions, monitoring, and safeguards**, limiting the impact of unintended or unsafe actions.
 
-### 🛣️ PathMoE (Path-Constrained Mixture of Experts)
-An advanced Mixture of Experts architecture that learns efficient "expert paths" across multiple layers, reducing computational cost while improving model performance.
+### 🎛️ AI Control Plane
+A centralized layer for managing AI agents across an enterprise, providing **permissions, security, observability, governance, and usage controls** as organizations scale autonomous AI.
 
-### 🔄 Latent Cache Merging
-An emerging multi-agent AI concept where agents merge their internal Key-Value (KV) caches instead of exchanging only text, enabling faster collaboration and reducing redundant computation.
+### 🧪 RL Environments
+Realistic simulated environments where AI agents **learn by performing tasks and receiving feedback**, enabling them to develop and evaluate capabilities beyond static training data.
 
-### 📡 Generative Communications (GenCom)
-A next-generation AI-powered communication approach where receivers reconstruct missing information using AI, reducing the amount of data transmitted and improving network efficiency for future 6G systems.
+### 🔥 Semantic Firewall
+An emerging AI-security layer that evaluates an agent's **intent and actions in real time**, helping organizations allow, block, or control potentially unsafe agent behavior.
