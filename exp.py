@@ -1,20 +1,20 @@
-business_prompt = """
-Create a flow diagram for an AI document processing system.
+def extract_json(text):
 
-A user uploads a document.
-The document is received by an API Gateway.
-The API Gateway sends the document to a Document Processing Service.
-The service extracts text from the document.
-The extracted text is sent to an Embedding Service.
-The embeddings are stored in a Vector Database.
+    text = text.strip()
 
-When the user asks a question, the system retrieves
-relevant information from the Vector Database.
-The retrieved information is sent to an LLM.
-The LLM generates the final answer.
-The answer is returned to the user.
-"""
+    # Remove markdown fences if model adds them
+    text = re.sub(r"```json", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"```", "", text)
 
-raw_response = generate_diagram_spec(business_prompt)
+    # Find JSON object
+    match = re.search(r"\{.*\}", text, re.DOTALL)
 
-print(raw_response)
+    if not match:
+        raise ValueError("No JSON found in Mistral response")
+
+    return json.loads(match.group())
+
+
+diagram_spec = extract_json(raw_response)
+
+print(json.dumps(diagram_spec, indent=2))
