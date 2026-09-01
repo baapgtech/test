@@ -1,62 +1,75 @@
-import torch
+import json
+import re
 
-print("PyTorch:", torch.__version__)
-print("CUDA available:", torch.cuda.is_available())
-print("GPU count:", torch.cuda.device_count())
+def generate_diagram_spec(business_prompt):
 
-for i in range(torch.cuda.device_count()):
-    props = torch.cuda.get_device_properties(i)
-    print(
-        f"GPU {i}: {props.name} | "
-        f"VRAM: {props.total_memory / 1024**3:.1f} GB"
+    prompt = f"""
+You are a senior software architect.
+
+Your task is to convert a business/system description into
+a precise architecture or flow diagram specification.
+
+Business/System Description:
+{business_prompt}
+
+Return ONLY valid JSON.
+
+Use exactly this structure:
+
+{{
+  "title": "Short diagram title",
+  "nodes": [
+    {{
+      "id": "unique_id",
+      "label": "Component name",
+      "type": "user|service|database|queue|external|llm"
+    }}
+  ],
+  "edges": [
+    {{
+      "source": "source_node_id",
+      "target": "target_node_id",
+      "label": "relationship or action"
+    }}
+  ]
+}}
+
+Rules:
+1. Identify all important components.
+2. Represent the actual flow between components.
+3. Do not invent unnecessary components.
+4. Node IDs must be unique.
+5. Keep node labels short.
+6. Preserve important business terminology.
+7. Every edge source and target must exist in nodes.
+8. Return JSON only.
+"""
+
+    messages = [
+        {
+            "role": "user",
+            "content": prompt
+        }
+    ]
+
+    inputs = tokenizer.apply_chat_template(
+        messages,
+        return_tensors="pt",
+        add_generation_prompt=True
+    ).to("cuda")
+
+    with torch.no_grad():
+
+        outputs = model.generate(
+            inputs,
+            max_new_tokens=1200,
+            temperature=0.1,
+            do_sample=False
+        )
+
+    response = tokenizer.decode(
+        outputs[0][inputs.shape[-1]:],
+        skip_special_tokens=True
     )
 
-%pip install -U transformers accelerate sentencepiece
-
-
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
-
-MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"
-
-print("Loading tokenizer...")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-
-print("Loading Mistral...")
-model = AutoModelForCausalLM.from_pretrained(
-    MODEL_NAME,
-    torch_dtype=torch.float16,
-    device_map="cuda"
-)
-
-print("Model loaded successfully!")
-print("GPU:", torch.cuda.get_device_name(0))
-
-
-messages = [
-    {
-        "role": "user",
-        "content": "Explain what a software architecture diagram is in 3 simple points."
-    }
-]
-
-inputs = tokenizer.apply_chat_template(
-    messages,
-    return_tensors="pt",
-    add_generation_prompt=True
-).to("cuda")
-
-with torch.no_grad():
-    outputs = model.generate(
-        inputs,
-        max_new_tokens=200,
-        temperature=0.2,
-        do_sample=False
-    )
-
-response = tokenizer.decode(
-    outputs[0][inputs.shape[-1]:],
-    skip_special_tokens=True
-)
-
-print(response)
+    return response
