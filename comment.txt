@@ -1,0 +1,7 @@
+Explored Mistral for the on-the-fly diagram/image generation requirement.
+Evaluated Snowflake Cortex AI as the integration approach for accessing Mistral.
+Validated the flow of converting a natural-language requirement into a structured diagram definition.
+Explored dynamic diagram generation using Mermaid/diagram rendering.
+Tested the approach with a sample RIMS/DIMS triage use case.
+Validated that the approach can generate an updated diagram dynamically based on changes in the input requirement.
+Documented the implementation approach, findings, and possible next steps for further integration.
