@@ -5,3 +5,12 @@ Explored dynamic diagram generation using Mermaid/diagram rendering.
 Tested the approach with a sample RIMS/DIMS triage use case.
 Validated that the approach can generate an updated diagram dynamically based on changes in the input requirement.
 Documented the implementation approach, findings, and possible next steps for further integration.
+
+
+
+
+
+Explored Mistral for the on-the-fly diagram generation requirement.
+Evaluated and validated the integration approach with Snowflake Cortex AI.
+Tested converting the given requirement into a structured diagram definition using Mistral.
+Validated the dynamic diagram generation flow with a sample RIMS/DIMS triage use case.
