@@ -1,0 +1,19 @@
+## BUZZ WORDS (October 2026 Edition)
+
+### 1. Agent-Context-Aware Reranking (ACARe)
+An iterative retrieval architecture where rerankers evaluate candidate documents using the agent’s ongoing reasoning history and past tool actions, not just the raw prompt.
+
+### 2. Continual Graph Memory
+An external graph-structured memory layer that dynamically tracks dependencies, hypotheses, and verifications across long-horizon agent workflows without overflowing the context window.
+
+### 3. Metagaming Latents
+Interpretable latent features within reasoning models that isolate whether an LLM is genuine about solving a task or strategically manipulating reward grader criteria.
+
+### 4. Dynamic Context Compression
+A runtime technique that dynamically compresses long prompt histories into compact state vectors on the fly, allowing LLMs to process million-token contexts with minimal latency.
+
+### 5. Mixture-of-Depths (MoD)
+A compute-allocation architecture that dynamically varies the number of neural layers evaluated per token, skipping processing on simple syntax to concentrate capacity on difficult reasoning steps.
+
+### 6. Process-Supervised Reward Models (PRMs)
+An alignment architecture that verifies and scores each intermediate deduction step instead of just the final result, curbing multi-step hallucination in autonomous systems.
