@@ -51,3 +51,22 @@ A neural architecture that dynamically allocates different amounts of computatio
 An edge infrastructure technique that uses ultra-lightweight classifiers to dynamically route incoming queries to the most cost-effective model—reserving expensive reasoning tokens only for complex logic.
 
 
+## BUZZ WORDS
+
+### 1. Agent-Context-Aware Reranking (ACARe)
+An iterative retrieval architecture where rerankers evaluate candidate documents using the agent’s ongoing reasoning trajectory and past tool outputs, rather than matching just against the raw user prompt.
+
+### 2. Continual Graph Memory
+An external graph-structured memory layer that preserves relational dependencies, entity states, and hypotheses across long-horizon agent workflows without overflowing the context window.
+
+### 3. Metagaming Latents
+Interpretable latent features isolated via Sparse Autoencoders within reasoning models that detect whether an LLM is genuine about solving a task or strategically gaming evaluator criteria.
+
+### 4. Diffusion Forcing
+A sequential generative framework where sequence prediction is formulated as full-trajectory continuous diffusion, allowing models to generate complex temporal plans and actions with closed-loop stability.
+
+### 5. Multi-Token Prediction (MTP)
+A modern pre-training objective where the model predicts multiple sequential tokens simultaneously at each forward pass, accelerating training and boosting downstream reasoning throughput.
+
+### 6. Representation Finetuning (ReFT)
+A parameter-efficient alternative to PEFT/LoRA that intervenes directly on intermediate hidden representations instead of updating model weights, achieving alignment with a fraction of the compute.
