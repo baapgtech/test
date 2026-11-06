@@ -1,0 +1,9 @@
+Consistently delivered high-quality results across assigned goals, demonstrating strong technical expertise, ownership, innovation, and a proactive approach to problem-solving.
+
+Key achievements include successful implementation and fine-tuning of open-source AI models, expanding AI capabilities and supporting practical business use cases. Additionally, contributed to the Mira Chatbot project by implementing the image generator module, extending its generative AI functionality.
+
+Demonstrated strong capabilities in AI/ML engineering, model integration, fine-tuning, backend development, automation, and performance optimization. Proactively explored and implemented technical solutions to address business requirements while ensuring code quality, reliability, and maintainability.
+
+Actively supported project deliverables, technical troubleshooting, release activities, and cross-functional coordination. Exhibited strong behavioral competencies through accountability, proactive communication, collaboration, adaptability, and knowledge sharing.
+
+Consistently demonstrated a commitment to continuous learning, technical excellence, and delivering measurable value beyond routine responsibilities, exceeding expectations across technical and behavioral performance.
