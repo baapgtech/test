@@ -1,9 +1,10 @@
-Consistently delivered high-quality results across assigned goals, demonstrating strong technical expertise, ownership, innovation, and a proactive approach to problem-solving.
+I want to broaden my technical expertise across Agentic AI, Multi-Agent Systems, MCP, GenAI, backend engineering, and cloud-native technologies. My goal is to develop deeper expertise in designing intelligent, scalable AI solutions while taking greater ownership of architecture, automation, and end-to-end delivery.
 
-Key achievements include successful implementation and fine-tuning of open-source AI models, expanding AI capabilities and supporting practical business use cases. Additionally, contributed to the Mira Chatbot project by implementing the image generator module, extending its generative AI functionality.
+My key areas of interest include:
+- Designing Agentic AI and Multi-Agent systems using frameworks like LangGraph.
+- Exploring Model Context Protocol (MCP) and AI tool integrations.
+- Building advanced RAG pipelines and enterprise-grade GenAI solutions.
+- Open-source LLM fine-tuning, optimization, and deployment.
+- Strengthening MLOps, cloud-native architecture, and scalable backend systems.
 
-Demonstrated strong capabilities in AI/ML engineering, model integration, fine-tuning, backend development, automation, and performance optimization. Proactively explored and implemented technical solutions to address business requirements while ensuring code quality, reliability, and maintainability.
-
-Actively supported project deliverables, technical troubleshooting, release activities, and cross-functional coordination. Exhibited strong behavioral competencies through accountability, proactive communication, collaboration, adaptability, and knowledge sharing.
-
-Consistently demonstrated a commitment to continuous learning, technical excellence, and delivering measurable value beyond routine responsibilities, exceeding expectations across technical and behavioral performance.
+I aim to take greater ownership of AI architecture, technical innovation, and end-to-end solution delivery.
